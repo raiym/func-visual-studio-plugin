@@ -1,0 +1,26 @@
+{
+    "name": "FunC",
+    "displayName": "FunC",
+    "publisher": "raiym",
+    "description": "Syntax highlighting for FunC language ",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "func",
+            "aliases": ["FunC", "func"],
+            "extensions": [".fc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "func",
+            "scopeName": "source.func",
+            "path": "./syntaxes/func.tmLanguage.json"
+        }]
+    }
+}
